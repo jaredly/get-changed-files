@@ -93,6 +93,7 @@ jobs:
           echo 'steps.files.outputs.removed=${{ steps.files.outputs.removed }}'
           echo 'steps.files.outputs.renamed=${{ steps.files.outputs.renamed }}'
           echo 'steps.files.outputs.added_modified=${{ steps.files.outputs.added_modified }}'
+          echo 'steps.files.outputs.added_renamed_modified=${{ steps.files.outputs.added_renamed_modified }}'
 
       - id: files-filtered
         name: Run the action with filtering
@@ -113,4 +114,5 @@ jobs:
           echo 'steps.files-filtered.outputs.removed=${{ steps.files-filtered.outputs.removed }}'
           echo 'steps.files-filtered.outputs.renamed=${{ steps.files-filtered.outputs.renamed }}'
           echo 'steps.files-filtered.outputs.added_modified=${{ steps.files-filtered.outputs.added_modified }}'
+          echo 'steps.files-filtered.outputs.added_renamed_modified=${{ steps.files-filtered.outputs.added_renamed_modified }}'
 
